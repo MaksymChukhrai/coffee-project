@@ -1,0 +1,398 @@
+
+
+.sellers-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.sellers-backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-buy-section-container {
+  position: relative;
+  width: 609px;
+  padding: 48px;
+  margin: 20px auto;
+
+  background: #fafafa;
+  border-radius: 15px;
+}
+
+.color-top {
+  color: #fd9222;
+}
+.modal-buy-close-btn {
+  position: absolute;
+
+  stroke: #111111;
+  background-color: transparent;
+}
+.modal-buy-section-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.modal-buy-section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.modal-buy-section-item {
+  padding: 24px 20px 18px 20px;
+  width: 160px;
+  height: 196px;
+
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.modal-buy-section-img {
+  margin-bottom: 14px;
+}
+
+.weight-for-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 8px 27px;
+  width: 96px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.modal-close-btn-icon {
+  fill: #000000;
+}
+
+.modal-buy-now-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+
+.modal-buy-now-input:focus {
+  outline: none;
+  border-color: #fd9222;
+}
+
+.modal-buy-now-textarea:focus {
+  outline: none;
+  border-color: #fd9222;
+}
+
+.modal-phone-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.code-number {
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  top: 45%;
+  left: 74px;
+  transform: translate(0, -50%);
+}
+
+.modal-buy-now-name {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  gap: 22px;
+}
+
+.modal-buy-now-name > .modal-buy-now-input {
+  margin: 0;
+}
+
+.modal-buy-now-input-wrapper {
+  position: relative;
+}
+.modal-buy-now-icon-flag {
+  position: absolute;
+  top: 45%;
+  left: 24px;
+  transform: translate(0, -50%);
+}
+
+.modal-buy-now-icon-mastercard {
+  position: absolute;
+  top: 45%;
+  right: 24px;
+  transform: translate(0, -50%);
+}
+
+.modal-buy-now-btn {
+  padding: 14px 40px;
+  color: #ffffff;
+  background: #fd9222;
+  border-radius: 100px;
+  width: 133px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  border-color: transparent;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+.modal-buy-input-description {
+  margin-bottom: 8px;
+}
+
+.modal-buy-now-btn:hover,
+.modal-buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.modal-buy-section-container.is-hidden-sellers {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* --------------------- M O B I L E --------------------- */
+@media screen and (max-width: 767px) {
+  .sellers-swiper-desctop {
+    display: none;
+  }
+
+  .modal-buy-section-container {
+    width: 311px;
+    padding: 32px;
+  }
+  .modal-buy-section-item {
+    width: 100%;
+    height: 257px !important;
+  }
+
+  .modal-buy-section-img {
+    display: block;
+    object-fit: cover;
+    width: 167px;
+    height: 148px;
+  }
+  .swiper-slide {
+    display: flex;
+    text-align: center;
+  }
+  .swiper-wrapper.buy {
+    position: relative;
+  }
+
+  .sellers-swiper-mobile.sellers-swiperbuy {
+    margin-bottom: 32px;
+    width: 100%;
+    margin-right: 100px;
+    overflow: hidden;
+  }
+
+  .sellers-swiper-pagination {
+    display: flex;
+    position: static;
+    justify-content: center;
+    padding-top: 14px;
+  }
+
+  .sellers-swiper-pagination > span {
+    background-color: #fd9222;
+  }
+
+  .modal-buy-close-btn {
+    top: 14px;
+    right: 14px;
+  }
+
+  .modal-buy-section-form {
+    margin-top: 32px;
+    width: 263px;
+  }
+
+  .modal-buy-now-name {
+    flex-direction: column;
+  }
+
+  .seller-swiper-pagination {
+    margin-bottom: 32;
+  }
+
+  .modal-buy-now-input {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    padding: 14px 18px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: transparent;
+  }
+
+  .modal-buy-now-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+  }
+
+  .code-number {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    top: 45%;
+    left: 50px;
+    transform: translate(0, -50%);
+    padding: 0 8px;
+    border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  }
+
+  .modal-buy-now-icon-flag {
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-phone-input {
+    position: relative;
+    color: rgba(64, 64, 64, 0.3);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 100px;
+  }
+  .modal-phone-input::placeholder {
+    padding-left: 14px;
+  }
+
+  .modal-buy-now-textarea {
+    width: 100%;
+    height: 91px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    resize: none;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    padding: 14px 18px;
+    background-color: transparent;
+  }
+
+  .modal-buy-now-textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+  }
+
+  .modal-buy-now-btn {
+    max-width: 109px;
+    padding: 12px 28px;
+  }
+}
+/* ---------------------T A B L E T // D E S K T O P--------------------- */
+@media screen and (min-width: 768px) {
+  .sellers-swiper-mobile {
+    display: none;
+  }
+
+  .modal-buy-section-container {
+    width: 609px;
+    padding: 48px;
+  }
+
+  .modal-buy-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+
+  .modal-buy-section-form {
+    margin-top: 40px;
+    width: 513px;
+  }
+
+  .modal-buy-now-input {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    padding: 22px 24px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    background-color: transparent;
+  }
+
+  .modal-buy-now-input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+  }
+
+  .modal-phone-input {
+    position: relative;
+    color: rgba(64, 64, 64, 0.3);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 149px;
+  }
+
+  .modal-buy-now-textarea {
+    width: 100%;
+    height: 137px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    resize: none;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 13px;
+    padding: 22px 24px;
+    background-color: transparent;
+  }
+  .modal-buy-now-textarea::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+  }
+
+  .code-number {
+    padding-right: 32px;
+    border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  }
+
+  .modal-phone-input::placeholder {
+    padding-left: 32px;
+  }
+}

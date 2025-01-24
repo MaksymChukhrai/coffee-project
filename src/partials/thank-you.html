@@ -1,0 +1,43 @@
+<div class="thanks-backdrop is-hidden js-thanks" data-modal="thanks">
+  <div class="thanks-modal">
+    <button
+      class="close-thanks-modal-btn"
+      type="button"
+      data-modal-close="thanks"
+    >
+      <svg class="close-thanks-modal-icon" width="16" height="16">
+        <use href="./img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="thanks-box-text">
+      <h2 class="thanks-titel">thank you!</h2>
+      <p class="thanks-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
+
+    <picture>
+      <source
+        srcset="
+          ./img/thanks_chocolate/chocolate-mob@1x.png 1x,
+          ./img/thanks_chocolate/chocolate-mob@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <source
+        srcset="
+          ./img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
+          ./img/thanks_chocolate/chocolate-tab-desk@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="thanks-img"
+        src="./img/thanks_chocolate/chocolate-mob@1x.png"
+        alt="Pice of chocolate"
+      />
+    </picture>
+  </div>
+</div>

@@ -1,0 +1,142 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./modern-normalize.css');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./taste.css');
+@import url('./made.css');
+@import url('./product.css');
+@import url('./sellers.css');
+@import url('./revives.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+@import url('./buy-now.css');
+@import url('./explore.css');
+@import url('./leave-review.css');
+@import url('./thank-you.css');
+@import url('./buy-now.css');
+@import url('./feedback.css');
+@import url('./mobile-menu.css');
+
+:root {
+  scroll-behavior: smooth;
+
+  --black-main: #111111;
+  --dark-purple-main: #1e1823;
+  --orange-main: #fd9222;
+  --white-main: #fafafa;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  background-color: var(--white-main);
+}
+
+.container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  padding-top: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
+
+  .section {
+    padding-top: 128px;
+  }
+}
+
+.animation-standart-button {
+}
+
+.is-hidden {
+  display: block;
+}
+
+.animation-button-buy {
+  animation: animation-button-buy 0.9s both;
+}
+/* transition-property: background-color, color; это вставить в кнопку */
+@keyframes animation-button-buy {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.open-modal {
+  animation: open-modal 1s ease-in both;
+}
+@keyframes open-modal {
+  0% {
+    transform: translateX(-800px) rotateY(30deg) scale(0);
+    transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  animation: close-modal 1500ms ease-in both;
+}
+@keyframes close-modal {
+  0% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 2000px 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px) rotateY(30deg) scale(0);
+    transform-origin: -100% 50%;
+    opacity: 1;
+  }
+}

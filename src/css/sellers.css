@@ -1,0 +1,142 @@
+/* <!-- =========================================SELLERS SECTION========================================= --> */
+
+.sellers-desktop-container .sellers-mobile-tablet-container {
+  background-color: #fafafa;
+}
+
+.color-top {
+  color: var(--orange-main);
+}
+.sellers-section-title {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.sellers-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 32px 16px;
+  margin-bottom: 20px;
+}
+
+.sellers-item:last-child {
+  display: none;
+}
+
+.sellers-picture {
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sellers-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.sellers-text {
+  max-width: 407px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.sellers-buy-now-btn {
+  min-width: 109px;
+  width: 162px;
+  padding: 14px 40px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background: var(--orange-main);
+  border-radius: 100px;
+  border-color: transparent;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+
+.sellers-buy-now-btn:hover,
+.sellers-buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+/* ---------------------M O B I L E --------------------- */
+@media screen and (max-width: 767px) {
+  .sellers-item {
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sellers-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sellers-text {
+    margin-top: 20px;
+  }
+
+  .sellers-text-tablet {
+    display: none;
+  }
+}
+/* ---------------------T A B L E T --------------------- */
+
+@media screen and (min-width: 768px) {
+  .sellers-section-title {
+    margin-bottom: 32px;
+  }
+
+  .sellers-text-mobile {
+    display: none;
+  }
+  .sellers-list {
+    margin-bottom: 32px;
+  }
+
+  .sellers-item {
+    max-width: 344px;
+  }
+
+  .sellers-text {
+    max-width: 306px;
+  }
+
+  .sellers-buy-now-btn {
+    margin-left: auto;
+  }
+}
+/* ---------------------D E S K T O P --------------------- */
+@media screen and (min-width: 1200px) {
+  .sellers-section-title {
+    margin-bottom: 50px;
+  }
+
+  .sellers-item {
+    max-width: 368px;
+  }
+
+  .sellers-item:last-child {
+    display: block;
+  }
+
+  .sellers-text {
+    max-width: 407px;
+  }
+}
+/* <!-- =========================================/SELLERS SECTION========================================= --> */
