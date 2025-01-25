@@ -36,6 +36,7 @@
 
 .logo-style {
   font-style: italic;
+  color:var(--orange-main);
 }
 
 .logo {

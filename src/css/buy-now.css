@@ -152,7 +152,7 @@
   color: #ffffff;
   background: #fd9222;
   border-radius: 100px;
-  width: 133px;
+  /* max-width: 140px; */
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -316,7 +316,7 @@
   }
 
   .modal-buy-now-btn {
-    max-width: 109px;
+    /* max-width: 140px; */
     padding: 12px 28px;
   }
 }
