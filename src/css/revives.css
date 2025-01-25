@@ -108,12 +108,12 @@
   /* margin-top: 50px; */
   margin-bottom: 72px;
 }
-@media screen (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .button-wrapper {
     margin-bottom: 100px;
   }
 }
-@media screen (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .button-wrapper {
     margin-bottom: 128px;
   }

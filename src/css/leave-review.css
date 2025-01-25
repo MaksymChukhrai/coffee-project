@@ -86,7 +86,7 @@
   .modal-review-title {
     font-size: 24px;
     line-height: 1.17;
-    max-width: 298px;
+    max-width: 310px;
     height: 56px;
   }
 }
@@ -240,7 +240,7 @@
   font-size: 14px;
   line-height: 1.21;
   color: #ffffff;
-  width: 93px;
+  width: 140px;
   height: 41px;
   padding: 12px 28px;
   background: #fd9222;
@@ -252,7 +252,7 @@
 }
 @media only screen and (min-width: 768px) {
   .send-btn {
-    width: 117px;
+    width: 160px;
     height: 45px;
     padding: 14px 40px;
   }
