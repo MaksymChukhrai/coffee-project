@@ -4,6 +4,27 @@
   margin-right: auto;
   position: relative;
 }
+
+.header-buy-btn{
+  font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+    width: 140px;
+    height: 41px;
+    padding: 12px 20px;
+    background: #fd9222;
+    border-radius: 100px;
+    border: 0;
+    /* margin-right: 14px; */
+    transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1), background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
 @media only screen and (min-width: 768px) {
   .mobile-container {
     max-width: 704px;
@@ -66,6 +87,7 @@
   align-items: center;
   width: 21px;
   height: 21px;
+  margin-left: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
