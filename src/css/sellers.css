@@ -65,7 +65,7 @@
 
 .sellers-buy-now-btn {
   min-width: 109px;
-  width: 162px;
+  /* width: 162px; */
   padding: 14px 40px;
 
   font-weight: 600;
