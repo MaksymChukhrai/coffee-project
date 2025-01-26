@@ -13,8 +13,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     gap: 14px;
-    width: 140px;
+    /* width: 140px; */
     height: 41px;
     padding: 12px 20px;
     background: #fd9222;
