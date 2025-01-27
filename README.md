@@ -2,7 +2,7 @@
 
 ## Технології, використані в проекті
 HTML 5, CSS 3 – верстка контенту, 
-JavaScript – Програмування інтерактивних елементів додатку.
+JavaScript – програмування інтерактивних елементів додатку.
 Vite - сучасний інструмент збірки (build tool) і сервер розробки (development server).
 
 ## Особливості проекту
@@ -38,8 +38,6 @@ Vite - сучасний інструмент збірки (build tool) і сер
 Після введення коректних даних і відправки їх, відкривається додаткове модальне вікно. 
 
 ![Thank you](assets/thanks.jpg)
-
-![Thank you](https://raw.githubusercontent.com/MaksymChukhrai/coffee-project/main/assets/thanks.jpg)
 
 
 ## Підготовка до роботи
