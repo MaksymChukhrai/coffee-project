@@ -43,7 +43,7 @@ Vite - сучасний інструмент збірки (build tool) і сер
 
 Після введення коректних даних і відправки їх, відкривається додаткове модальне вікно. 
 
-![Thank you](assets/thanks.jpg)
+<img src="assets/thanks.jpg" alt="Thank you" width="500" height="346">
 
 
 ## Підготовка до роботи
