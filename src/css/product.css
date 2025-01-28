@@ -75,10 +75,14 @@
 }
 .product-button:hover{
   background: #fd9222;
+  color: #ffffff;
 }
-.product-button.details:hover{
-  background: #fff;
+.product-button.details:hover,
+.product-button.details:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
+
 
 @media screen and (min-width: 768px) {
   .swiper-slide.prod {
@@ -148,6 +152,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   margin-bottom: 32px;
+  transition: var(--button-color-transition);
 }
 .swiper-pagination.product {
   position: static;

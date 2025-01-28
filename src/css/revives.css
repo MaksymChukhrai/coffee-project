@@ -89,7 +89,7 @@
   font-size: 18px;
   line-height: 1.2em;
   background-color: #fafafa;
-  transition: ease-out 0.3s;
+  transition: var(--button-color-transition);
   color: #111111;
 }
 .button-review:hover,
